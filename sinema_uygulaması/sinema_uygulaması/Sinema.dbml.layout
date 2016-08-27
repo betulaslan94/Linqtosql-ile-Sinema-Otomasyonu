@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Sinema">
+  <DataContextMoniker Name="/SinemaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5e668c03-0713-4b82-8871-617f906fbb28" absoluteBounds="0.75, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SinemaDataContext/salon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0feaf609-0d75-4b56-b8b4-da65b1e6be53" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2b0fe0b-b584-4bfe-a699-26d86e31a3ea" absoluteBounds="3.5, 4.25, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/SinemaDataContext/sean" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6bba9625-028b-42ba-9355-6fb5e2b2211c" absoluteBounds="3.515, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8bc43004-9f44-45f4-b9e8-e3d13eecd3b8" absoluteBounds="3.5, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SinemaDataContext/film" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed9f87fd-7616-4619-aa76-dad465535a5c" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de32753d-57bd-4ce0-ad56-12bbb58e97a2" absoluteBounds="6.25, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SinemaDataContext/bilet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12f7eff9-ba7c-433c-93ed-23c759dbdd5d" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SinemaDataContext/salon/salon_film" />
+      <nodes>
+        <classShapeMoniker Id="5e668c03-0713-4b82-8871-617f906fbb28" />
+        <classShapeMoniker Id="8bc43004-9f44-45f4-b9e8-e3d13eecd3b8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.85659912109375); (6.25 : 1.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SinemaDataContext/film/film_bilet" />
+      <nodes>
+        <classShapeMoniker Id="8bc43004-9f44-45f4-b9e8-e3d13eecd3b8" />
+        <classShapeMoniker Id="de32753d-57bd-4ce0-ad56-12bbb58e97a2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.84699625651042); (7.25 : 4.84699625651042); (7.25 : 2.8381982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SinemaDataContext/sean/sean_bilet" />
+      <nodes>
+        <classShapeMoniker Id="c2b0fe0b-b584-4bfe-a699-26d86e31a3ea" />
+        <classShapeMoniker Id="de32753d-57bd-4ce0-ad56-12bbb58e97a2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

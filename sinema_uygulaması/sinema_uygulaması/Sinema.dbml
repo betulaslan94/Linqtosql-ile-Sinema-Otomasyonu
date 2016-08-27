@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Sinema" Class="SinemaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=Sinema;Integrated Security=True" SettingsObjectName="sinema_uygulaması.Properties.Settings" SettingsPropertyName="SinemaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.salon" Member="salons">
+    <Type Name="salon">
+      <Column Name="salon_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="kapasite" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="salon_film" Member="films" ThisKey="salon_id" OtherKey="salon_id" Type="film" />
+    </Type>
+  </Table>
+  <Table Name="dbo.seans" Member="seans">
+    <Type Name="sean">
+      <Column Name="seans_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="saat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="sean_bilet" Member="bilets" ThisKey="seans_id" OtherKey="seans_id" Type="bilet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.film" Member="films">
+    <Type Name="film">
+      <Column Name="film_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="fTur" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sure" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="resim" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="salon_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="film_bilet" Member="bilets" ThisKey="film_id" OtherKey="film_id" Type="bilet" />
+      <Association Name="salon_film" Member="salon" ThisKey="salon_id" OtherKey="salon_id" Type="salon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bilet" Member="bilets">
+    <Type Name="bilet">
+      <Column Name="bilet_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="film_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="seans_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tarih" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="koltuk_no" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ucret" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Association Name="film_bilet" Member="film" ThisKey="film_id" OtherKey="film_id" Type="film" IsForeignKey="true" />
+      <Association Name="sean_bilet" Member="sean" ThisKey="seans_id" OtherKey="seans_id" Type="sean" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

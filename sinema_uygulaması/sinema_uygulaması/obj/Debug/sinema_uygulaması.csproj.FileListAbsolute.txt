@@ -1,0 +1,13 @@
+c:\users\betul\onedrive\belgeler\visual studio 2015\Projects\sinema_uygulaması\sinema_uygulaması\bin\Debug\sinema_uygulaması.exe.config
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\bin\Debug\sinema_uygulaması.exe.config
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\bin\Debug\sinema_uygulaması.exe
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\bin\Debug\sinema_uygulaması.pdb
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.csprojResolveAssemblyReference.cache
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.AnaSayfa.resources
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.filmekle.resources
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.Properties.Resources.resources
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.salon1.resources
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.salon2.resources
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.csproj.GenerateResource.Cache
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.exe
+C:\Users\betul\Desktop\sinema_uygulaması\sinema_uygulaması\obj\Debug\sinema_uygulaması.pdb
